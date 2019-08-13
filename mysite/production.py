@@ -9,8 +9,9 @@ DATABASES = {
     'default': dj_database_url.config(default='sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3'))
     }
 
-#DEBUG = False
-DEBUG = True
+
+DEBUG = False
+#DEBUG = True
 TEMPLATE_DEBUG = False
 ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOSTS'), 'localhost', 'py230-ubtuntu02004013.westus.cloudapp.azure.com']
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')

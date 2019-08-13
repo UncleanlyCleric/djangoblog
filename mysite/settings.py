@@ -23,10 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ns#W&y_ub%C4EDQw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['py230-ubtuntu02004013.westus.cloudapp.azure.com']
-
 
 # Application definition
 
@@ -139,7 +138,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
-
 STATIC_URL = '/static/'
 
 LOGIN_URL = '/login/'
@@ -152,3 +150,7 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10
 }
+
+SOCIAL_AUTH_REDIRECT_IS_HTTPS = True
+
+ACCOUNT_DEFAULT_HTTP_PROTOCOL='https'

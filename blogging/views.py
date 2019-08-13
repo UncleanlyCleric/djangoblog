@@ -10,7 +10,7 @@ from blogging.forms import PostForm
 def add_model(request):
     # If nobody is logged in, redirect to login screen
     if str(request.user) == 'AnonymousUser':
-        return redirect('http://localhost:8000/accounts/login/')
+        return redirect('http://py230-ubtuntu02004013.westus.cloudapp.azure.com/accounts/login/')
 
     elif request.method == 'POST':
         form = PostForm(request.POST)
