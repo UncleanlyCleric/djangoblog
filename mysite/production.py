@@ -10,8 +10,8 @@ DATABASES = {
     }
 
 
-DEBUG = False
-#DEBUG = True
+#DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = False
 ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOSTS'), 'localhost', 'py230-ubtuntu02004013.westus.cloudapp.azure.com']
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
