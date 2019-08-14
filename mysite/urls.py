@@ -22,6 +22,7 @@ urlpatterns = [
     path('', include('blogging.urls')),  # <- already there
     path('admin/', admin.site.urls),   # <- already there
     path("polling/", include("polling.urls")),
+    path("api/", include("api.urls")),
     path('login/', LoginView.as_view(template_name='login.html'), name="login"),
     path('logout/', LogoutView.as_view(next_page='/'), name="logout"),
     path("accounts/", include("allauth.urls")),

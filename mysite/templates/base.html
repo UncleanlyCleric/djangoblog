@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Django Blog</title>
+        <title>Cleric's Blog</title>
         <link type="text/css" rel="stylesheet" href="{% static "django_blog.css" %}">
     </head>
     <body>
@@ -35,6 +35,9 @@
           <div id="header">
               <ul id="control-bar">
                   {% if user.is_authenticated %}
+		  <li><a href="/">blogging</a></li>
+		  <li><a href="/polling/">polling</a></li>
+		  <li><a href="/api/">API reference</a></li>
                   {% if user.is_staff %}<li><a href="{% url 'admin:index' %}">admin</a></li>{% endif %}
                       <li><a href="{% url 'logout' %}">logout</a></li>
                   {% else %}

@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ns#W&y_ub%C4EDQw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True 
+DEBUG = False
 
 ALLOWED_HOSTS = ['py230-ubtuntu02004013.westus.cloudapp.azure.com']
 
@@ -144,7 +144,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
 
-SITE_ID = 3
+SITE_ID = 4
 
 
 REST_FRAMEWORK = {
